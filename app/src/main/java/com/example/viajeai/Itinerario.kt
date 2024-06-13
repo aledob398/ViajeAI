@@ -285,7 +285,7 @@ class Itinerario : AppCompatActivity() {
             else -> {
                 button.setBackgroundResource(R.drawable.button_background_lila_dark3)
                 button.setCompoundDrawablesWithIntrinsicBounds(
-                    R.drawable.ic_money,
+                    R.drawable.baseline_dining_24_2,
                     0,
                     0,
                     0
