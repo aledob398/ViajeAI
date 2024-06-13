@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "432917103264",
+    "firebase_url": "https://viajeai-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "viajeai",
+    "storage_bucket": "viajeai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432917103264:android:5964af6cd57725c0183fc5",
+        "android_client_info": {
+          "package_name": "com.example.viajeai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432917103264-o5jeub34gs18ou7lgcurr8tumaop6bj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.viajeai",
+            "certificate_hash": "f2f8be2f68f5eaa536657c7a73d6a08796c49b41"
+          }
+        },
+        {
+          "client_id": "432917103264-bb45llkiasp2lv4brskghl3vrdl8ch9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDci_o-8mzg57jmsJ1mhyLiSaY1i-nRsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432917103264-bb45llkiasp2lv4brskghl3vrdl8ch9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

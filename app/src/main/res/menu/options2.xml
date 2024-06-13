@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/one"
+            android:icon="@drawable/baseline_airplanemode_active_24"
+            android:title="Mis viajes"></item>
+        <item android:id="@+id/two"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Perfil"></item>
+        <item android:id="@+id/three"
+            android:icon="@drawable/baseline_person_off_24"
+            android:title="Cerrar sesion"></item>
+    </group>
+</menu>

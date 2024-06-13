@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="#BCB2B2" />
+        </shape>
+    </item>
+</selector>

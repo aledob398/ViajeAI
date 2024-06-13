@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.viajeai">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="U Travel"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ViajeAI"
+        tools:targetApi="31">
+        <activity
+            android:name=".ModificarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadesAleatorias"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleGeneral"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleOcioNocturno"
+            android:exported="false" />
+        <activity
+            android:name=".detalleAlojamiento"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleRestaurante"
+            android:exported="false" />
+        <activity
+            android:name=".Alojamientos_restaurantes"
+            android:exported="false" />
+        <activity
+            android:name=".CostesActivity"
+            android:exported="false" /> <!-- Actividades -->
+        <activity
+            android:name=".MapaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearPerfilGoogleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearPerfilActivity"
+            android:exported="false"
+            android:label="Crear Perfil"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MiPerfilActivity"
+            android:exported="false"
+            android:label="Mi Perfil" />
+        <activity
+            android:name=".DetalleViajeActivity"
+            android:exported="false"
+            android:label="Viaje" />
+        <activity
+            android:name=".AgregarViajeActivity"
+            android:exported="false"
+            android:label="Nuevo viaje" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="Cerrar Sesion" />
+        <activity
+            android:name=".CerrarSesion"
+            android:exported="false" />
+        <activity
+            android:name=".Itinerario"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurantes"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DestinosRecomendados"
+            android:exported="false" />
+        <activity
+            android:name=".MisViajes"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDFcSOD7qKj8CDqWEmtV380f80aQ2ans6Q" />
+    </application>
+
+</manifest>

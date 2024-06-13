@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/one"
+            android:icon="@drawable/baseline_airplanemode_active_24"
+            android:title="Mis viajes"></item>
+        <item android:id="@+id/two"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Perfil"></item>
+        <item android:id="@+id/three"
+            android:icon="@drawable/baseline_nature_people_24"
+            android:title="Actividades"></item>
+        <item android:id="@+id/four"
+            android:icon="@drawable/baseline_view_timeline_24"
+            android:title="Itinerario"></item>
+        <item android:id="@+id/five"
+            android:icon="@drawable/baseline_dining_24_2"
+            android:title="Alojamientos y restaurantes"></item>
+        <item android:id="@+id/six"
+            android:icon="@drawable/baseline_attach_money_24_2"
+            android:title="Costes"></item>
+        <item android:id="@+id/seven"
+            android:icon="@drawable/baseline_airplanemode_active_24"
+            android:title="Detalle del viaje"></item>
+        <item android:id="@+id/eight"
+            android:icon="@drawable/baseline_person_off_24"
+            android:title="Cerrar sesion"></item>
+    </group>
+</menu>

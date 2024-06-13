@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViajeAI</string>
+
+    <string name="google_maps_key">AIzaSyDFcSOD7qKj8CDqWEmtV380f80aQ2ans6Q</string>
+    <string name="google_places_key">AIzaSyDFcSOD7qKj8CDqWEmtV380f80aQ2ans6Q</string>
+    <string name="default_web_client_id">432917103264-o5jeub34gs18ou7lgcurr8tumaop6bj9.apps.googleusercontent.com</string>
+</resources>

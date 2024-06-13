@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_negro_morado"
+    tools:context=".DetalleGeneral">
+
+    <TextView
+        android:id="@+id/textViewNombreItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="Nombre del Item"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#403C3C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNombreItem">
+
+        <ImageView
+            android:id="@+id/imageViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/border_style" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="17dp"
+        app:cardBackgroundColor="#403C3C"
+
+        android:layout_marginEnd="187dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/textViewDescripcionItem"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:layout_margin="13dp"
+               android:text="Descripción del Item" />
+       </ScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewWeb"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        app:cardBackgroundColor="#403C3C"
+        android:layout_margin="16dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="217dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewDescripcion">
+
+        <Button
+            android:id="@+id/buttonWebItem"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:text="Sitio web" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEmail"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#403C3C"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="229dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewWeb">
+
+        <Button
+            android:id="@+id/buttonEmailItem"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:text="Enviar Correo"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTelefono"
+        android:layout_width="0dp"
+        app:cardBackgroundColor="#403C3C"
+        android:layout_height="62dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="218dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewEmail">
+
+        <Button
+            android:id="@+id/buttonTelefonoItem"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:text="Teléfono" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAdd"
+        android:layout_width="112dp"
+        android:layout_height="69dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#403C3C"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewMap"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableEnd="@android:drawable/ic_input_add"
+            android:text="Añadir" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMap"
+        android:layout_width="109dp"
+        android:layout_height="73dp"
+        app:cardBackgroundColor="#403C3C"
+        android:layout_margin="16dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardViewAdd">
+
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableEnd="@android:drawable/ic_dialog_map"
+            android:text="Ver Mapa" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

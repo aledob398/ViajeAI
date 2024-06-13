@@ -1,0 +1,439 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleViajeActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_negro_morado">
+
+
+        <TextView
+            android:id="@+id/encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/lila_degradado2"
+            android:gravity="center_vertical"
+            android:paddingStart="50px"
+            android:paddingLeft="50px"
+            android:text="Detalle del Viaje"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/baseline_menu_24"
+            android:gravity="end"
+            app:backgroundTint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:layout_marginTop="72dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="351dp"
+                android:layout_height="209dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAdd13"
+                    android:layout_width="220dp"
+                    android:layout_height="182dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="#7E6A6A70"
+                    android:backgroundTint="@color/black"
+                    app:cardBackgroundColor="#002B2727"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/btnImgViaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:background="#C6151515"
+                        android:backgroundTint="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/imageViewClic"
+                    android:layout_width="70dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="98dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="56dp"
+                    android:layout_marginBottom="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/click"
+                    app:tint="#00FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageViewClick"
+                    android:layout_width="116dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="82dp"
+                    android:layout_marginEnd="46dp"
+                    android:layout_marginBottom="27dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:rotationX="2"
+                    android:rotationY="2"
+                    android:translationZ="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/click"
+                    app:tint="#00FFFFFF" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                app:cardBackgroundColor="#675C5C"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="336dp"
+                    android:layout_height="418dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@color/black"
+
+                    android:backgroundTint="@color/black"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewWeb"
+                        android:layout_width="321dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="217dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardBackgroundColor="#4D737272"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.042"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardViewDescripcion">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="128dp"
+                                android:layout_marginTop="-3dp"
+                                android:text="Actividades"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:translationZ="100dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imagen9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/baseline_downhill_skiing_24"
+                                android:text="Añadir"
+                                android:translationZ="1000dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/btnActividadesAleatorias"
+                                style="@style/LilaDarkButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:background="#007C7070"
+                                android:backgroundTint="#2B2D30"
+                                android:icon="@drawable/ic_money"
+
+                                android:text="Ver Mapa"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/button_background_lila_dark" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewWeb1"
+                        android:layout_width="321dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="217dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardBackgroundColor="#4D737272"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.042"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardViewDescripcion">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="136dp"
+                                android:layout_marginTop="-3dp"
+                                android:text="Itinerario"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:translationZ="100dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imagen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/baseline_view_timeline_24_2"
+                                android:text="Añadir"
+                                android:translationZ="1000dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/btnItinerario"
+                                style="@style/LilaDarkButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:background="#007C7070"
+                                android:backgroundTint="#2B2D30"
+                                android:icon="@drawable/ic_money"
+
+                                android:text="Ver Mapa"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/button_background_lila_dark" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewWeb16"
+                        android:layout_width="321dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="217dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardBackgroundColor="#4D737272"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.042"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardViewDescripcion">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="139dp"
+                                android:layout_marginTop="-3dp"
+                                android:text="Costes"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:translationZ="100dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imagen4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/baseline_attach_money_24_white"
+                                android:text="Añadir"
+                                android:translationZ="1000dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/btnCostes"
+                                style="@style/LilaDarkButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:background="#007C7070"
+                                android:backgroundTint="#2B2D30"
+                                android:icon="@drawable/ic_money"
+
+                                android:text="Ver Mapa"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/button_background_lila_dark" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewWeb162"
+                        android:layout_width="321dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="217dp"
+                        android:layout_marginBottom="25dp"
+                        app:cardBackgroundColor="#4D737272"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.042"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardViewDescripcion">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView442"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="91dp"
+                                android:layout_marginTop="-3dp"
+                                android:text="Estancias y restaurantes"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:translationZ="100dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imagen43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/baseline_dining_24"
+                                android:text="Añadir"
+                                android:translationZ="1000dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/btnAlojamientoRestaurantes"
+                                style="@style/LilaDarkButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:background="#007C7070"
+                                android:backgroundTint="#2B2D30"
+                                android:icon="@drawable/ic_money"
+
+                                android:text="Ver Mapa"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/button_background_lila_dark" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:headerLayout="@layout/header_layout"
+        app:itemTextColor="@android:color/system_accent1_1000"
+        app:menu="@menu/options"
+        tools:targetApi="s">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="@android:color/system_accent1_1000"
+            android:paddingTop="30dp"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center_horizontal" />
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewNombreAlojamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Alojamiento"
+        android:textSize="24sp"
+        android:layout_margin="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewAlojamiento"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDescripcionAlojamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción del Alojamiento"
+        android:textSize="18sp"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewEmailAlojamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email del Alojamiento"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTelefonoAlojamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono del Alojamiento"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewWebAlojamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sitio Web del Alojamiento"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

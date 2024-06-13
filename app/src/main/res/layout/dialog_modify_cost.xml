@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="294dp"
+        android:layout_height="46dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#B1ACAC"
+        app:cardElevation="4dp"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/editTextNuevoCoste"
+            android:layout_width="283dp"
+            android:layout_height="36dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:hint="Nuevo coste"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:textColorHint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

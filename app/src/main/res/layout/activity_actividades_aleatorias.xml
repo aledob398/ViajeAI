@@ -1,0 +1,97 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarViajeActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_negro_morado">
+
+
+        <TextView
+            android:id="@+id/encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/lila_degradado2"
+            android:gravity="center_vertical"
+            android:paddingStart="50px"
+            android:paddingLeft="50px"
+            android:text="Actividades"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/btn_open"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="326dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/baseline_menu_24"
+            android:gravity="end"
+            app:backgroundTint="@color/white" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ScrollView
+                android:layout_width="361dp"
+                android:layout_height="628dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutActividadesAleatorias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </FrameLayout>
+
+ 
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_layout"
+        app:itemTextColor="@android:color/system_accent1_1000"
+        app:menu="@menu/options"
+        tools:targetApi="s">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="@android:color/system_accent1_1000"
+            android:paddingTop="30dp"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center_horizontal" />
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

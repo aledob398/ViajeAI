@@ -1,0 +1,76 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="#2B2727"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="104dp"
+            android:layout_height="28dp"
+            android:text="Descripción"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="-5dp"
+            android:inputType="none"
+            android:text="Fecha"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewCoste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Costo"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnModificar"
+            app:layout_constraintTop_toTopOf="@id/textViewDescripcion" />
+
+        <ImageButton
+            android:id="@+id/btnModificar"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btnEliminar"
+            app:layout_constraintTop_toTopOf="@id/textViewDescripcion"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewDescripcion"
+            app:srcCompat="@drawable/baseline_delete_forever_24"
+            app:tint="#EF1212" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

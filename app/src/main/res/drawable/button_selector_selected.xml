@@ -1,0 +1,4 @@
+<!-- res/drawable/button_selector_selected.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/selected_button_background" />
+</selector>

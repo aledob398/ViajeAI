@@ -1,0 +1,24 @@
+<!-- res/layout/activity_splash.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1D8E7">
+
+    <ImageView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:src="@drawable/animacion" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="341dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/animation_view"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="-66dp"
+        android:layout_marginRight="32dp"
+        android:indeterminate="false"
+        android:visibility="visible" />
+</RelativeLayout>

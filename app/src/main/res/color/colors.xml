@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <color android:name="selected_color" tools:ignore="ExtraText">#FF4081</color>
+    <color android:name="unselected_color">#FFFFFF</color>
+    <color android:name="blue">#0000FF</color>
+    <color android:name="red">#0000FF</color>
+    <color android:name="purple_500">#0000FF</color>
+    <color android:name="negro_gris">#403C3C</color>
+    <color android:name="purple_200">#0000FF</color>
+</selector>
